@@ -3,39 +3,84 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-video {
+/* video {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-}
+} */
 
-.header-container {
-  position: relative;
+.parent-container_1 {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10em;
+  position: relative;
 }
-.header-container h1 {
+
+.video-container {
+  z-index: -1;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+
+
+.heading {
+  margin-top: 0%;
   color: whitesmoke;
   font-size: 32pt;
   margin-bottom: 15px;
 }
-.header-container .line {
+.line {
   width: 0%;
   border: 1.5px white solid;
   border-radius: 1em;
   margin-bottom: 15px;
 }
-.header-container .circle {
+.circle {
   width: 1em;
   height: 1em;
   border: 2px white solid;
   background: whitesmoke;
   border-radius: 100%;
   margin: 1em;
+}
+p {
+  font-size: 16pt;
+  color: whitesmoke
+}
+
+
+
+.header-container {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+.content_1 {
+  width: 45em;
+}
+.content_1 .heading {
+  margin-top: 3em;
+}
+.content_1 p {
+  padding-top: 10px;
+}
+
+.parent-container_2 {
+  width: 100%;
+  height: 100%;
+  background-position-x: 0%;
+  background-position-y: 20%;
+  background-image: url(https://static01.nyt.com/images/2017/06/13/blogs/13-lens-navy-slide-DDK9/13-lens-navy-slide-DDK9-superJumbo.jpg);
 }

@@ -6,29 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/fullpage.css" />
     <title>Lava</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="fullscreen-bg">
-            <video autoplay muted loop id="bgvid">
-                <source src="/lavalamp.mp4" type="video/mp4">
-            </video>
+
+    <div id="fullpage">
+        <div class="section">
+            <div class="parent-container_1">
+                <div class="video-container">
+                    <video autoplay muted loop id="bgvid" data-keepplaying>
+                        <source src="/lavalamp.mp4" type='video/mp4'>
+                        </video>
+                    </video>
+                </div>
+                <div class="header-container">
+                    <h1 class="heading">A tribute to Lava Lamps</h1>
+                    <div class="line"></div>
+                    <div class="circle moving"></div>
+                    <div class="circle moving"></div>
+                    <div class="circle moving"></div>
+                </div>
+            </div>
         </div>
-        <div class="header-container">
-            <h1 id="heading">A tribute to Lava Lamps</h1>
-            <div class="line"></div>
-            <div class="circle moving"></div>
-            <div class="circle moving"></div>
-            <div class="circle moving"></div>
+        <div class="section">
+            <div class="parent-container_2">
+                <div class="content-container">
+                    <section class="content_1">
+                        <h2 class="heading">Edward Craven Walker</h2>
+                        <div class="line"></div>
+                        <p>
+                            Edward Craven Walker was born in Singapore on July 4, 1918, to British expatriate parents.
+                        </p>
+                        <p>
+                            He spent some time working for the British-American Tobacco Company, followed by his service
+                            with the Royal Air Force during World War II where he piloted Mosquito Aircraft on
+                            photo reconnaissance missions.
+                        </p>
+                        <p>
+                            After his discharge from the RAF, he moved to London and began to develop his own home exchange travel business.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            </p>
         </div>
-        <div class="content-container"></div>
-        <div class="content-container"></div>
-        <div class="content-container"></div>
-        <div class="content-container"></div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
     </div>
+
     <script src="main.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: false,
+            scrollHorizontally: false
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(true);
+    </script>
 </body>
 
 </html>
