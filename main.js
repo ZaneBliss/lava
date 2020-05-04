@@ -60,3 +60,13 @@ function animatethis(targetElement, speed) {
 animatethis($('.parent-container_2'), 15000);
 
 startFade()
+
+window.addEventListener('scroll', function(){
+  var place = document.body.scrollTop;
+  var firstPanel = document.getElementById('test').offsetTop;
+  var secondPanel = document.getElementById('test').offsetTop;
+  if(place > alertOn){
+    fade
+    this.removeEventListener('scroll', arguments.callee, false);
+  }
+});
